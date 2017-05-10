@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE repositories SYSTEM "https://www.gentoo.org/dtd/repositories.dtd">
+<repositories>
+  <repo quality="experimental" status="unofficial">
+    <name><![CDATA[dell-vostro-3560-overlay]]></name>
+    <description lang="en"><![CDATA[Gentoo overlay for hardware support for Dell Vostro 3560]]></description>
+    <homepage>https://github.com/dkorotych/dell-vostro-3560</homepage>
+    <owner type="person">
+      <email>dkorotych@gmail.com</email>
+      <name><![CDATA[Dmitry Korotych]]></name>
+    </owner>
+    <source type="git">git://github.com/dkorotych/dell-vostro-3560.git</source>
+    <source type="git">https://github.com/dkorotych/dell-vostro-3560.git</source>
+    <source type="git">git@github.com:dkorotych/dell-vostro-3560.git</source>
+    <feed>https://github.com/dkorotych/dell-vostro-3560/commits/master.atom</feed>
+  </repo>
+</repositories>
