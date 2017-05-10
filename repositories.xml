@@ -2,7 +2,7 @@
 <!DOCTYPE repositories SYSTEM "https://www.gentoo.org/dtd/repositories.dtd">
 <repositories>
   <repo quality="experimental" status="unofficial">
-    <name><![CDATA[dell-vostro-3560-overlay]]></name>
+    <name><![CDATA[dell-vostro-3560]]></name>
     <description lang="en"><![CDATA[Gentoo overlay for hardware support for Dell Vostro 3560]]></description>
     <homepage>https://github.com/dkorotych/dell-vostro-3560</homepage>
     <owner type="person">
