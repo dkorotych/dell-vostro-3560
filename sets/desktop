@@ -1,0 +1,3 @@
+@hardware
+media-libs/vulkan-loader
+media-sound/alsa-utils
