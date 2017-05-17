@@ -1,4 +1,4 @@
 net-wireless/broadcom-sta
 sys-firmware/intel-microcode
 sys-apps/usbutils
-app-arch/lzop
+media-sound/alsa-utils
