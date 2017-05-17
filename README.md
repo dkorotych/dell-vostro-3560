@@ -6,7 +6,7 @@
 
 Invoke the following:
 ```
-layman -o https://raw.github.com/dkorotych/dell-vostro-3560/master/repositories.xml -f -a dell-vostro-3560
+sudo layman -o https://raw.github.com/dkorotych/dell-vostro-3560/master/repositories.xml -f -a dell-vostro-3560
 ```
 Or read the instructions on the [Gentoo Wiki](http://wiki.gentoo.org/wiki/Layman#Adding_custom_overlays).
 
