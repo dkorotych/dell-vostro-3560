@@ -1,5 +1,6 @@
 # dell-vostro-3560
 [Gentoo](https://gentoo.org/) overlay for hardware support for Dell Vostro 3560
+[![Build Status](https://travis-ci.org/dkorotych/dell-vostro-3560.svg?branch=master)](https://travis-ci.org/dkorotych/dell-vostro-3560)
 
 ## How to use this overlay
 ### With Layman

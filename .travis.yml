@@ -1,0 +1,16 @@
+sudo: required
+
+language: bash
+
+services:
+- docker
+
+before_install:
+- docker pull gentoo/portage
+- docker pull gentoo/stage3-amd64
+
+before_script:
+- chmod +x ./validate-repository.sh
+
+script:
+- ./validate-repository.sh
