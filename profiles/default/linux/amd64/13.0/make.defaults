@@ -9,4 +9,4 @@ ALSA_CARDS="-* hda-intel usb-audio"
 USE="${USE} ${CPU_FLAGS_X86}"
 
 # Video support
-USE="${USE} vaapi vulkan opencl"
+USE="${USE} vaapi vulkan"
