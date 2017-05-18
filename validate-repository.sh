@@ -9,7 +9,7 @@ finalize() {
 	set +e
 	docker stop gentoo portage
 	docker rm gentoo portage
-	docker volume rm portage
+	docker volume rm $(docker volume ls -q)
 }
 
 trap finalize EXIT
