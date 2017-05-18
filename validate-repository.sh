@@ -3,12 +3,13 @@
 set -e
 set -o pipefail
 set -u
+set -x
 
 finalize() {
 	set +e
 	docker stop gentoo portage
-	docker rm portage
-	docker volume prune --force
+	docker rm gentoo portage
+	docker volume portage
 }
 
 trap finalize EXIT
@@ -34,7 +35,7 @@ END
 )
 
 docker create -v /usr/portage --name portage gentoo/portage
-docker run --rm --volumes-from portage --name gentoo -itd gentoo/stage3-amd64 /bin/bash
+docker run --volumes-from portage --name gentoo -itd gentoo/stage3-amd64 /bin/bash
 
 docker exec gentoo /bin/bash -c 'mv /etc/portage/make.conf /etc/portage/make.conf_old'
 docker exec gentoo /bin/bash -c 'echo "dev-vcs/git -curl -pcre -perl -webdav" > /etc/portage/package.use/git'
