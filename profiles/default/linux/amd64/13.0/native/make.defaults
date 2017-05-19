@@ -1,4 +1,4 @@
-TUNE_FLAGS="-march=native -mcpu=native"
+TUNE_FLAGS="-march=native -mtune=native"
 
 CFLAGS="${TUNE_FLAGS} ${CFLAGS}"
 CXXFLAGS="${TUNE_FLAGS} ${CPPFLAGS} ${CXXFLAGS}"
