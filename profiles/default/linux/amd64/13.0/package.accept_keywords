@@ -1,1 +1,2 @@
-net-wireless/broadcom-sta   ~amd64
+sys-apps/intel-performance-counter-monitor  ~amd64
+net-wireless/broadcom-sta                   ~amd64
