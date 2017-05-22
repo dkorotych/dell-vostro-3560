@@ -1,5 +1,11 @@
-virtual/linux-sources
-net-wireless/broadcom-sta
-sys-firmware/intel-microcode
-sys-apps/usbutils
+app-benchmarks/i7z
 media-sound/alsa-utils
+net-wireless/broadcom-sta
+sys-apps/ethtool
+sys-apps/i2c-tools
+sys-apps/intel-performance-counter-monitor
+sys-apps/rng-tools
+sys-apps/usbutils
+sys-apps/watchdog
+sys-firmware/intel-microcode
+virtual/linux-sources

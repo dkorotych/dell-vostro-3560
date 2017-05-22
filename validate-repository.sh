@@ -16,16 +16,9 @@ trap finalize EXIT
 trap exit ERR
 
 readonly nproc=$(nproc)
-readonly emerge="emerge --quiet=y --jobs=$nproc --load-average=$nproc"
+readonly emerge="emerge --jobs=$nproc --load-average=$nproc"
 
-readonly hardware=$(cat << END
-virtual/linux-sources
-sys-firmware/intel-microcode
-net-wireless/broadcom-sta
-sys-apps/usbutils
-media-sound/alsa-utils
-END
-)
+readonly hardware=$(cat sets/dell-vostro-3560-hardware)
 
 readonly desktop=$(cat << END
 ${hardware}
@@ -53,7 +46,7 @@ docker exec gentoo /bin/bash -c "$emerge --info | grep -q 'VIDEO_CARDS=\"intel i
 
 for set in hardware desktop
 do
-	docker exec gentoo /bin/bash -c "$emerge -pv @dell-vostro-3560-$set > /tmp/$set"
+	docker exec gentoo /bin/bash -c "$emerge -pv @dell-vostro-3560-$set | tee /tmp/$set"
 	eval packages=\$${set}
 	for package in ${packages}
 	do
