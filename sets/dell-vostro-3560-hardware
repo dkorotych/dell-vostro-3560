@@ -4,8 +4,10 @@ net-wireless/broadcom-sta
 sys-apps/ethtool
 sys-apps/i2c-tools
 sys-apps/intel-performance-counter-monitor
+sys-apps/hdparm
 sys-apps/lm_sensors
 sys-apps/rng-tools
+sys-apps/sdparm
 sys-apps/usbutils
 sys-apps/watchdog
 sys-firmware/intel-microcode
