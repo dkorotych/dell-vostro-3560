@@ -50,7 +50,7 @@ do
 	eval packages=\$${set}
 	for package in ${packages}
 	do
-		docker exec gentoo /bin/bash -c "grep -q '^\[ebuild  N    \] $package' /tmp/$set"
+		docker exec gentoo /bin/bash -c "grep -qE '^\[ebuild\s+N\s+(~?)\] $package' /tmp/$set"
 	done
 done
 
