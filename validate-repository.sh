@@ -24,6 +24,7 @@ readonly desktop=$(cat << END
 ${hardware}
 media-libs/vulkan-loader
 app-arch/lzop
+x11-apps/intel-gpu-tools
 END
 )
 
