@@ -1,3 +1,4 @@
 *net-wireless/broadcom-sta
-*sys-firmware/intel-microcode
+*sys-apps/irqbalance
 *sys-apps/usbutils
+*sys-firmware/intel-microcode
