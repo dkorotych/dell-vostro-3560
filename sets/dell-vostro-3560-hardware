@@ -11,4 +11,5 @@ sys-apps/sdparm
 sys-apps/usbutils
 sys-apps/watchdog
 sys-firmware/intel-microcode
+sys-kernel/gentoo-sources
 virtual/linux-sources
